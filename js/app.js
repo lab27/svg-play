@@ -1,14 +1,11 @@
 
 
 
-TweenMax.staggerFrom('.callout',.5,{opacity:0, marginTop: 100},.2);
+TweenMax.set('#hand',{x:"-1000px",y:"1000px"});
 
 var tl = new TimelineLite()
 
-$('.callout').on('click', function(){
-	tl.to(this,.1,{borderTopWidth:10, borderBottomWidth:10, borderColor: "#900"})
-	.to(this,.2,{color: "rgba(0,0,0,0)", backgroundColor: "#f00"},"-=.2")
-	.to(this,.3,{opacity:0,height:0,ease: Back.easeIn, onComplete: function(){
-		(this.target).remove()
-	}});
+$('#circle').on('click', function(){
+	TweenMax.to('#hand',.5,{x:0,y:0,ease:Power4.easeOut})
+	TweenMax.to('svg defs filter fe')
 });

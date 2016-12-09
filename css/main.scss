@@ -3,9 +3,34 @@
 
 @import 'foundation';
 @include foundation-everything;
-@import 'animate';
 
-.callout {
-  margin: 6px;
+$color-1: #DAF7A6;
+$color-2: #FFC300;
+$color-3: #FF5733;
+$color-4: #C70039;
+$color-5: #900C3F;
+$color-6: #581845;
+
+html, body {
+	overflow: hidden;
 }
 
+svg {
+	width: 100vw;
+	height: 100vh;
+	background: $color-1;
+
+	circle {
+		fill: $color-2;
+	}
+
+	path {
+		fill: $color-3;
+		stroke: $color-4;
+	}
+
+	#ui-holder {
+		fill: $color-5;
+		stroke: $color-6;
+	}
+}
