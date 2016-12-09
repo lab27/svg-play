@@ -20,17 +20,47 @@ svg {
 	height: 100vh;
 	background: $color-1;
 
-	circle {
+	#circle {
 		fill: $color-2;
 	}
 
-	path {
-		fill: $color-3;
-		stroke: $color-4;
+	#phone path {
+		fill: white;
+		stroke: #ddd;
+	}
+
+	#phone circle {
+		fill: #f9f9f9;
+		stroke: #ddd;
 	}
 
 	#ui-holder {
-		fill: $color-5;
-		stroke: $color-6;
+		fill: white;
+		stroke: #ddd;
+	}
+}
+
+#ui {
+	background: #eee;
+	width: 100%;
+	height: 100%;
+	padding: 12px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+}
+
+.tab {
+	width: 100%;
+	height:24px;
+	background:#fff;
+	margin-bottom: 3px;
+	border-radius: 3px;
+	padding: 6px;
+	height:30px;
+	line-height: 18px;
+	font-size: .8rem;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+
+	&.hovered {
+		background: yellow;
 	}
 }
