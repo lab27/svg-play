@@ -13,12 +13,13 @@ $color-6: #581845;
 
 html, body {
 	overflow: hidden;
+	background:$color-1;
 }
 
 svg {
 	width: 100vw;
 	height: 100vh;
-	background: $color-1;
+	// background: $color-1;
 
 	#circle {
 		fill: $color-2;
